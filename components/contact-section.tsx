@@ -79,13 +79,16 @@ export default function ContactSection() {
             <div>
               <h3 className="font-semibold text-gray-800 mb-6">Connect with me</h3>
               <div className="space-y-4">
-                <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
+                <a
+                  href="https://github.com/Pratiksha2729"
+                  className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer"
+                >
                   <Github className="w-6 h-6 text-gray-600" />
                   <div>
                     <p className="font-medium text-gray-800">GitHub</p>
                     <p className="text-sm text-gray-600">Open source projects</p>
                   </div>
-                </div>
+                </a>
 
                 <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
                   <Linkedin className="w-6 h-6 text-blue-600" />
@@ -95,13 +98,16 @@ export default function ContactSection() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
+                <a
+                  href="mailto:jadhavpratiksha2729@gmail.com"
+                  className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer"
+                >
                   <Mail className="w-6 h-6 text-green-600" />
                   <div>
                     <p className="font-medium text-gray-800">Email</p>
                     <p className="text-sm text-gray-600">jadhavpratiksha2729@gmail.com</p>
                   </div>
-                </div>
+                </a>
 
                 <div className="flex items-center gap-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors cursor-pointer">
                   <Phone className="w-6 h-6 text-orange-600" />

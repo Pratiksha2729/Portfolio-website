@@ -1,10 +1,10 @@
 "use client"
 import { Button } from "@/components/ui/button"
-import { Download, Moon, Sun, Menu, X } from "lucide-react"
+import { Download, Moon, Sun, Menu, X } from "lucide-react" // Added Download icon back
 import { useTheme } from "next-themes"
 import { useState, useEffect } from "react"
 
-export default function Navbar() {
+const Navbar = () => {
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -32,8 +32,8 @@ export default function Navbar() {
 
   const downloadCV = () => {
     const link = document.createElement("a")
-    link.href = "/cv/Pratiksha_Jadhav_Resume.pdf"
-    link.download = "Pratiksha_Jadhav_Resume.pdf"
+    link.href = "/Resume/Pratiksha_Jadhav_Resume(Java).pdf"
+    link.download = "Pratiksha_Jadhav_Resume(Java).pdf"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -48,14 +48,22 @@ export default function Navbar() {
             <div className="relative">
               <div className="w-12 h-12 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 p-0.5 shadow-lg">
                 <div className="w-full h-full rounded-full bg-white dark:bg-gray-800 flex items-center justify-center overflow-hidden">
-                  <span className="text-2xl">👩‍💻</span>
+                  <img
+                    src="/images/pratiksha-profile.jpeg"
+                    alt="Pratiksha Jadhav Profile"
+                    className="w-full h-full object-cover object-center rounded-full"
+                  />
                 </div>
               </div>
-              <div className="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full blur opacity-30 animate-pulse"></div>
+              {/* Softened glossy effect */}
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full blur-md opacity-10 animate-pulse"></div>
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+            <button
+              onClick={() => scrollToSection("#home")}
+              className="text-xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent focus:outline-none"
+            >
               Portfolio
-            </span>
+            </button>
           </div>
 
           {/* Desktop Navigation */}
@@ -144,3 +152,5 @@ export default function Navbar() {
     </nav>
   )
 }
+
+export default Navbar
