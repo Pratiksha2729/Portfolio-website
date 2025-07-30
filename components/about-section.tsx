@@ -60,7 +60,7 @@ export default function AboutSection() {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-gray-800 mb-6">Profile</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Domain:Retail, Ecommerce& Digital Marketing
+                  Domain:Retail, Ecommerce & Digital Marketing
                   Education:Masters of Computer Application
                   Language: English, Hindi, Marathi
                   Other Skills: Cloud, Excel, Git, Google Analytics & SEO
