@@ -58,10 +58,13 @@ export default function AboutSection() {
 
             <Card className="border-0 shadow-lg bg-white/80 backdrop-blur">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-gray-800 mb-6">Career Objective</h3>
+                <h3 className="text-2xl font-bold text-gray-800 mb-6">Profile</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Looking for an entry level position to kickstart my career in software field which will contribute to
-                  my professional and personal growth.
+                  Domain:Retail, Ecommerce& Digital Marketing
+                  Education:Masters of Computer Application
+                  Language: English, Hindi, Marathi
+                  Other Skills: Cloud, Excel, Git, Google Analytics & SEO
+                  Interest:Traveling, Programming
                 </p>
               </CardContent>
             </Card>
