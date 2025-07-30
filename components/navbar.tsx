@@ -32,7 +32,7 @@ const Navbar = () => {
 
   const downloadCV = () => {
     const link = document.createElement("a")
-    link.href = "/Resume/Pratiksha_Jadhav_Resume(Java).pdf"
+    link.href = "/Resume/Resume(Java Full Stack Developer).pdf"
     link.download = "Pratiksha_Jadhav_Resume(Java).pdf"
     document.body.appendChild(link)
     link.click()
