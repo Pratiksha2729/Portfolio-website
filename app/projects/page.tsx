@@ -18,6 +18,8 @@ export default function ProjectsPage() {
       ],
       status: "Personal Project",
       type: "Full-Stack Application",
+      githubLink: "https://github.com/Pratiksha2729/Indian_Doctors_Network",
+      liveDemo: "#" // put your live deployment link here if you have one
     },
   ]
 
@@ -51,19 +53,25 @@ export default function ProjectsPage() {
                   </div>
                   <div className="flex gap-2">
                     <Button
+                      asChild
                       size="sm"
                       variant="outline"
                       className="dark:border-gray-600 dark:text-gray-300 bg-transparent"
                     >
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
+                      <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                        <Github className="w-4 h-4 mr-2" />
+                        Code
+                      </a>
                     </Button>
                     <Button
+                      asChild
                       size="sm"
                       className="bg-purple-600 hover:bg-purple-700 dark:bg-purple-500 dark:hover:bg-purple-600"
                     >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Live Demo
+                      <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Live Demo
+                      </a>
                     </Button>
                   </div>
                 </div>
